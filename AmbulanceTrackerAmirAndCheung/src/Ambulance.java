@@ -4,6 +4,7 @@ public class Ambulance {
     private String destination;
     private String ambulanceID;
     private String code;
+    private String status;
 
     public String getCode() {
         return code;
@@ -45,11 +46,20 @@ public class Ambulance {
         this.ambulanceID = ambulanceID;
     }
 
-    public Ambulance(String longitude, String latitude, String destination, String ambulanceID, String code ) {
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Ambulance(String longitude, String latitude, String destination, String ambulanceID, String code, String status ) {
         setAmbulanceID(ambulanceID);
         setDestination(destination);
         setLatitude(latitude);
         setLongitude(longitude);
         setCode(code);
+
     }
 }
