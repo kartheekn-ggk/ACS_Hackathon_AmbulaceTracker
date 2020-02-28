@@ -1,6 +1,16 @@
 public class AmbulanceService {
+    RestClient restClient = new RestClient();
+    // updateAmbulanceStatus
+    public void updateAmbulanceStatus (Ambulance ambulance) {
 
-    private String path = "https://maps.googleapis.com/maps/api/directions/json?origin="+"&destination=33.044398, -96.836358&key=AIzaSyAMvz10odETnRkFHvrOYeUtlIVzAKns6lU";
+    }
+
+    public int ETAOfAmbulance (Ambulance ambulance) {
+        restClient.get("https://maps.googleapis.com/maps/api/directions/json?origin="+ ambulance.getLatitude()+","+ambulance.getLongitude()+"&destination="+ambulance.getDestination()+"&key=AIzaSyAMvz10odETnRkFHvrOYeUtlIVzAKns6lU");
+    }
+    // getListOfAmbulanceStatus
+
+    private String path =
     // get Geolocation Data from google
     // https://maps.googleapis.com/maps/api/directions/outputFormat?parameters
 
