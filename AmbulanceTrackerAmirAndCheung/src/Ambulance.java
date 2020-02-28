@@ -33,7 +33,7 @@ public class Ambulance {
         return destination;
     }
 
-    private void setDestination(String destination) {
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 
@@ -41,7 +41,7 @@ public class Ambulance {
         return ambulanceID;
     }
 
-    private void setAmbulanceID(String ambulanceID) {
+    public void setAmbulanceID(String ambulanceID) {
         this.ambulanceID = ambulanceID;
     }
 
