@@ -5,12 +5,12 @@ public class AmbulanceService {
 
     }
 
-    public int ETAOfAmbulance (Ambulance ambulance) {
-        restClient.get("https://maps.googleapis.com/maps/api/directions/json?origin="+ ambulance.getLatitude()+","+ambulance.getLongitude()+"&destination="+ambulance.getDestination()+"&key=AIzaSyAMvz10odETnRkFHvrOYeUtlIVzAKns6lU");
+    public String ETAOfAmbulance (Ambulance ambulance) {
+        String wholeJSON = restClient.get("https://maps.googleapis.com/maps/api/directions/json?origin="+ ambulance.getLatitude()+","+ambulance.getLongitude()+"&destination="+ambulance.getDestination()+"&key=AIzaSyAMvz10odETnRkFHvrOYeUtlIVzAKns6lU");
+        String lengthOfTime = wholeJSON.
     }
     // getListOfAmbulanceStatus
 
-    private String path =
     // get Geolocation Data from google
     // https://maps.googleapis.com/maps/api/directions/outputFormat?parameters
 
