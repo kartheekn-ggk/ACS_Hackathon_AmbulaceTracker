@@ -1,0 +1,4 @@
+com\example\servingwebcontent\GreetingController.class
+com\example\servingwebcontent\AmbulanceLocatorController.class
+com\example\servingwebcontent\HospitalsController.class
+com\example\servingwebcontent\ServingWebContentApplication.class

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Hospitals</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+	
+		$( "#texasMethods" ).click(function( event ) {
+			var hospital = "Texas Methodist";
+            alert( "Populating patients from " + hospital );
+			$('#selectPatients').append('<option value="DavidW">David Willams Sr. </option>');
+         });
+		 
+		 $( "#benTaub" ).click(function( event ) {
+			var hospital = "Ben Taub";
+            alert( "Populating patients from " + hospital );
+			$('#selectPatients').append('<option value="WillSmith">Will Smith. </option>');
+         });
+		 
+		 $( "#johnHopkins" ).click(function( event ) {
+			var hospital = "John Hopkins";
+            alert( "Populating patients from " + hospital );
+         });
+		 		 
+		 $( "#westsideMedical" ).click(function( event ) {
+			var hospital = "Westside Medical";
+            alert( "Populating patients from " + hospital );
+         });
+
+    });
+    </script>
+</head>
+<body>
+  <!-- selector for app component from app-module -->
+  <ul>
+	<li>Texas Methods 	 <a id="texasMethods" name="texasMethods"   href="" >Show Patients </li>
+	<li>John Hopkins 	 <a id="johnHopkins"     href="" >Show Patients </li>
+	<li>BenTaub          <a id="benTaub"	     href="" >Show Patients </li>
+	<li>Westside Medical <a id="westsideMedical" href="" >Show Patients </a> <a id="wsNew"    href="" >Add New Patient </a></li>
+</ul>
+<br>
+	<select id="selectPatients">
+		<option>select a patient</option>
+	</select>
+<br>
+</body>
+</html>
